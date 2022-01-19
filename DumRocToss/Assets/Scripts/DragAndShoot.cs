@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DragAndShoot : MonoBehaviour
 {
-    //Youtube Tutorial by Muddy Wolf
+    //code involves Youtube Tutorial by Muddy Wolf
     
     public float power = 10f;
     public Rigidbody2D rb;
@@ -21,15 +21,14 @@ public class DragAndShoot : MonoBehaviour
     private Vector3 endPoint;
     
     private bool isGrounded;
-    public Transform feetPos;
-    public float checkRadius;
-    public LayerMask whatIsGround;
+    public GameObject GroundCheck;
 
     private float jumpTimeCounter;
-    public float jumpTime;
     private bool isJumping;
     public float jumpCount;
     public float jumpCountMax;
+
+    public GameObject indicator;
 
 
     private void Start()
@@ -40,11 +39,27 @@ public class DragAndShoot : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-
-        if (isGrounded == true)
+        if (GroundCheck.gameObject.activeInHierarchy)
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+        
+        if (isGrounded == true && jumpCount == 0)
         {
             jumpCount = jumpCountMax;
+        }
+
+        if (jumpCount <= 0)
+        {
+            indicator.SetActive(false);
+        }
+        else
+        {
+            indicator.SetActive(true);
         }
 
         if (jumpCount > 0 && Input.GetMouseButtonDown(0))
