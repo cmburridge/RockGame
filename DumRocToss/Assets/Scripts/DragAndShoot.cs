@@ -15,7 +15,7 @@ public class DragAndShoot : MonoBehaviour
 
     private LineBehavior lb;
 
-    private Camera cam;
+    public Camera cam;
     private Vector2 force;
     private Vector3 startPoint;
     private Vector3 endPoint;
@@ -33,7 +33,6 @@ public class DragAndShoot : MonoBehaviour
 
     private void Start()
     {
-        cam = Camera.main;
         lb = GetComponent<LineBehavior>();
     }
 
