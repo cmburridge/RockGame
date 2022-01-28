@@ -8,6 +8,6 @@ public class ResetPosition : MonoBehaviour
 
     public void ChangePosition()
     {
-        player.transform.position = this.transform.position;
+        player.transform.Rotate(0,0,180);
     }
 }

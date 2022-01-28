@@ -1521,7 +1521,7 @@ GameObject:
   - component: {fileID: 414087135}
   - component: {fileID: 414087134}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Flip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1579,7 +1579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RESET
+  m_Text: FLIP
 --- !u!222 &414087135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2289,7 +2289,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: JUMP
+  m_Text: 'CAN
+
+    JUMP'
 --- !u!222 &652707339
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2807,13 +2809,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855872041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0734584, w: 0.9972983}
   m_LocalPosition: {x: -3.5, y: -4.2, z: -0.7109108}
   m_LocalScale: {x: 4.90466, y: 3.2845263, z: 1}
   m_Children: []
   m_Father: {fileID: 1490206697}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.425}
 --- !u!61 &855872043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3139,15 +3141,15 @@ RectTransform:
   m_GameObject: {fileID: 983318291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.657247, y: 1.9504161, z: 1.9504161}
+  m_LocalScale: {x: 1.8849448, y: 1.3835472, z: 1.3835472}
   m_Children:
   - {fileID: 652707337}
   m_Father: {fileID: 412103027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -210}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 135, y: 100}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &983318293
@@ -3213,13 +3215,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059769951}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0018295016, w: 0.9999984}
-  m_LocalPosition: {x: 3.3, y: 2.3, z: -0.7109108}
+  m_LocalRotation: {x: -0, y: -0, z: 0.08725917, w: 0.9961857}
+  m_LocalPosition: {x: 3.5, y: 2.9, z: -0.7109108}
   m_LocalScale: {x: 7.2170906, y: 1.8911645, z: 1}
   m_Children: []
   m_Father: {fileID: 1490206697}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.21}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10.012}
 --- !u!61 &1059769953
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5644,15 +5646,15 @@ RectTransform:
   m_GameObject: {fileID: 1997834073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.8512, y: 3.8512, z: 3.8512}
+  m_LocalScale: {x: 2.7318873, y: 2.7318873, z: 2.7318873}
   m_Children:
   - {fileID: 414087133}
   m_Father: {fileID: 412103027}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -200, y: -210}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -130, y: 100}
   m_SizeDelta: {x: 63.21997, y: 52.77002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997834075
