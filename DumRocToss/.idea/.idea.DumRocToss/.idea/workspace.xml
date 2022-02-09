@@ -11,7 +11,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/RandomScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyOnTimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FixPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23pzuj2imqHcvGzJ0p1SFyyemM7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,7 +63,7 @@
       <workItem from="1642469147023" duration="10442000" />
       <workItem from="1643336216155" duration="3735000" />
       <workItem from="1643653404396" duration="4884000" />
-      <workItem from="1644038203079" duration="311000" />
+      <workItem from="1644038203079" duration="7753000" />
     </task>
     <servers />
   </component>
