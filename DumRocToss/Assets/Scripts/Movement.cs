@@ -45,7 +45,7 @@ public class Movement : MonoBehaviour
             indicator.SetActive(false);
         }
         
-        if (GroundCheck.gameObject.activeInHierarchy)
+        if (GroundCheck.gameObject.activeInHierarchy && speed < 5)
         {
             isGrounded = true;
         }
@@ -67,6 +67,9 @@ public class Movement : MonoBehaviour
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
         {
+            rb.gravityScale = 1;
+            rb.freezeRotation = false;
+            
             endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             endPoint.z = 15;
             

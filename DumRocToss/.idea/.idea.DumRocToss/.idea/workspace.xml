@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/RandomScale.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyOnTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FixPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Stick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23pzuj2imqHcvGzJ0p1SFyyemM7" />
@@ -63,7 +64,7 @@
       <workItem from="1642469147023" duration="10442000" />
       <workItem from="1643336216155" duration="3735000" />
       <workItem from="1643653404396" duration="4884000" />
-      <workItem from="1644038203079" duration="8941000" />
+      <workItem from="1644038203079" duration="11551000" />
     </task>
     <servers />
   </component>
