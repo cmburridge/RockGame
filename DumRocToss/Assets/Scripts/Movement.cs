@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
 {
     public float power;
     public float speed;
+    public float gravity = 1;
     
     public Rigidbody2D rb;
     public Camera cam;
@@ -34,7 +35,7 @@ public class Movement : MonoBehaviour
     private void Update()
     {
         speed = rb.velocity.magnitude;
-        if (speed < 5 && jumpCount > 0)
+        if (speed < 6 && jumpCount > 0)
         {
             isMoving = false;
             indicator.SetActive(true);
@@ -45,7 +46,7 @@ public class Movement : MonoBehaviour
             indicator.SetActive(false);
         }
         
-        if (GroundCheck.gameObject.activeInHierarchy && speed < 5)
+        if (GroundCheck.gameObject.activeInHierarchy && speed < 6)
         {
             isGrounded = true;
         }
@@ -67,7 +68,7 @@ public class Movement : MonoBehaviour
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
         {
-            rb.gravityScale = 1;
+            rb.gravityScale = gravity;
             rb.freezeRotation = false;
             
             endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
