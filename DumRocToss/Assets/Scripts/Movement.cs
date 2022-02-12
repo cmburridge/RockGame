@@ -34,6 +34,11 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        if (rb.gravityScale == 0)
+        {
+            jumpCount = 1;
+        }
+    
         speed = rb.velocity.magnitude;
         if (speed < 6 && jumpCount > 0)
         {
