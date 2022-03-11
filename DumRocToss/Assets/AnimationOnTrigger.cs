@@ -8,7 +8,6 @@ public class AnimationOnTrigger : MonoBehaviour
     public Animator anim;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("works");
-        anim.Play("Shake");
+        anim.Play("Still");
     }
 }
