@@ -88,7 +88,7 @@ public class Movement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (isMoving == false)
+        if (jumpCount == 0)
         {
             rb.AddForce(reset, ForceMode2D.Impulse);   
         }
