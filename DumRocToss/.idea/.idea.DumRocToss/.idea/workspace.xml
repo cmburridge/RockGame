@@ -13,6 +13,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelSelect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ScriptableObj/FloatData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationOnTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23pzuj2imqHcvGzJ0p1SFyyemM7" />
@@ -65,7 +66,7 @@
       <workItem from="1644038203079" duration="14311000" />
       <workItem from="1644619404288" duration="8882000" />
       <workItem from="1646357241700" duration="1786000" />
-      <workItem from="1646961480522" duration="4617000" />
+      <workItem from="1646961480522" duration="6046000" />
     </task>
     <servers />
   </component>
