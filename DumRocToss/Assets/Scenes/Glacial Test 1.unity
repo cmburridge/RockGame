@@ -1530,8 +1530,8 @@ MonoBehaviour:
   gravity: 1
   rb: {fileID: 277913954}
   cam: {fileID: 1529190434}
-  minPower: {x: 6, y: 6}
-  maxPower: {x: -6, y: -6}
+  minPower: {x: -6, y: -6}
+  maxPower: {x: 6, y: 6}
   reset: {x: 0, y: 2}
   GroundCheck: {fileID: 2097972196}
   jumpCount: 0
