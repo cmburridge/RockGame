@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8881594688006432665}
   - component: {fileID: 6491683841793498149}
   - component: {fileID: 6491683841793498150}
+  - component: {fileID: 6043723641763322621}
   m_Layer: 13
   m_Name: SpikeBAll Variant 1
   m_TagString: Untagged
@@ -136,8 +137,8 @@ MonoBehaviour:
   triggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HealthBehavior, Assembly-CSharp
+      - m_Target: {fileID: 6043723641763322621}
+        m_TargetAssemblyTypeName: Damage, Assembly-CSharp
         m_MethodName: LowerHp
         m_Mode: 1
         m_Arguments:
@@ -150,5 +151,30 @@ MonoBehaviour:
         m_CallState: 2
   unTriggered:
     m_PersistentCalls:
-      m_Calls: []
-  time: 0
+      m_Calls:
+      - m_Target: {fileID: 6491683841793498150}
+        m_TargetAssemblyTypeName: TriggerBehavior, Assembly-CSharp
+        m_MethodName: SetInActive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  time: 2
+--- !u!114 &6043723641763322621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8881594688006432662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cab00ec5650a97409396eff4fc5d065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 11400000, guid: f58d60eaf24dc3a45bd14a2e44ac0e49, type: 2}

@@ -8,14 +8,8 @@ using UnityEngine.UI;
 public class HealthBehavior : MonoBehaviour
 {
     public UnityEvent healthEvent;
-    public Slider healthBar;
     public FloatData hpAmount;
-    public GameObject loseScreen;
-
-    public void LowerHp()
-    {
-        hpAmount.value -= 1;
-    }
+    public GameObject damage1, damage2;
 
     private void Start()
     {
@@ -24,11 +18,18 @@ public class HealthBehavior : MonoBehaviour
 
     void Update()
     {
-        healthBar.value = hpAmount.value;
+        if (hpAmount.value == 2)
+        {
+            damage1.SetActive(true);
+        }
         
+        if (hpAmount.value == 1)
+        {
+            damage2.SetActive(true);
+        }
+
         if (hpAmount.value <= 0)
         {
-            loseScreen.SetActive(true);
             healthEvent.Invoke();
         }
     }

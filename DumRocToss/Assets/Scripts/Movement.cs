@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -25,20 +26,38 @@ public class Movement : MonoBehaviour
     private bool isJumping;
     public float jumpCount;
     public float jumpCountMax;
+    public MapData MD;
     
     private Vector3 startPoint;
     private Vector3 endPoint;
     
     public GameObject indicator;
+    public SpriteRenderer art;
 
+    private void Start()
+    {
+        cam = Camera.main;
+
+        if (MD.isOcean == true)
+        {
+            rb.gravityScale = gravity;
+            power = 1;
+            jumpCountMax = 4;
+            art.color = Color.cyan;
+        }
+        else
+        {
+            gravity = 1;
+        }
+    }
 
     private void Update()
     {
-        if (rb.gravityScale == 0)
+        if (gravity == 0)
         {
             jumpCount = 1;
         }
-    
+        
         speed = rb.velocity.magnitude;
         if (speed < 6 && jumpCount > 0)
         {

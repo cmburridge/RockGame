@@ -102,7 +102,7 @@ Rigidbody2D:
   m_Mass: 6
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1.5
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -139,7 +139,7 @@ MonoBehaviour:
   prefab: {fileID: 62812128927508383}
   spawner: {fileID: 0}
   location: {x: 0, y: 0, z: 0}
-  time: 20
+  time: 27
 --- !u!1 &2427121833957564225
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 2427121833957564224}
   - component: {fileID: 2427121833957564238}
   - component: {fileID: 2427121833957564239}
+  - component: {fileID: 7230582366871211794}
   m_Layer: 13
   m_Name: Damage
   m_TagString: Untagged
@@ -203,8 +204,8 @@ MonoBehaviour:
   triggered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: HealthBehavior, Assembly-CSharp
+      - m_Target: {fileID: 7230582366871211794}
+        m_TargetAssemblyTypeName: Damage, Assembly-CSharp
         m_MethodName: LowerHp
         m_Mode: 1
         m_Arguments:
@@ -231,3 +232,16 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   time: 2
+--- !u!114 &7230582366871211794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427121833957564225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cab00ec5650a97409396eff4fc5d065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 11400000, guid: f58d60eaf24dc3a45bd14a2e44ac0e49, type: 2}
