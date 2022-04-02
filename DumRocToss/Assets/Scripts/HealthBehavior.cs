@@ -10,10 +10,28 @@ public class HealthBehavior : MonoBehaviour
     public UnityEvent healthEvent;
     public FloatData hpAmount;
     public GameObject damage1, damage2;
-
+    public bool isArmored = false;
+    public bool isFragile = false;
+    
     private void Start()
     {
-        hpAmount.value = 3;
+        if (isArmored == true)
+        {
+            hpAmount.value = 4;
+        }
+        else
+        {
+            hpAmount.value = 3;
+        }
+
+        if (isFragile == true)
+        {
+            hpAmount.value = 1;
+        }
+        else
+        {
+            hpAmount.value = 3;
+        }
     }
 
     void Update()

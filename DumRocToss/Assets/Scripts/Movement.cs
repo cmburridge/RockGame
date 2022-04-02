@@ -26,6 +26,7 @@ public class Movement : MonoBehaviour
     private bool isJumping;
     public float jumpCount;
     public float jumpCountMax;
+    public float speedCap = 6;
     public MapData MD;
     
     private Vector3 startPoint;
@@ -59,7 +60,7 @@ public class Movement : MonoBehaviour
         }
         
         speed = rb.velocity.magnitude;
-        if (speed < 6 && jumpCount > 0)
+        if (speed < speedCap && jumpCount > 0)
         {
             isMoving = false;
             indicator.SetActive(true);
@@ -70,7 +71,7 @@ public class Movement : MonoBehaviour
             indicator.SetActive(false);
         }
         
-        if (GroundCheck.gameObject.activeInHierarchy && speed < 6)
+        if (GroundCheck.gameObject.activeInHierarchy && speed < speedCap)
         {
             isGrounded = true;
         }

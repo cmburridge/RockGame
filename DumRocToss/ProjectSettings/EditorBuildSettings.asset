@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: c1adcf202775964458a92ad5a396ba2e
+    path: Assets/Scenes/StartMenu.unity
+    guid: 535ce6201271adf4a950255036e087db
   - enabled: 1
     path: Assets/Scenes/WoodlandsTest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mountain Test.unity
     guid: e76b25ea2bf28d147b2ef42a96e811c3
-  - enabled: 0
-    path: Assets/Scenes/Glacial Test.unity
-    guid: 884c119ea94a374488d1b2b47bd4910e
   - enabled: 1
     path: Assets/Scenes/Glacial Test 1.unity
     guid: 4e10bca1d8033984ba29802f39ebc3a5
