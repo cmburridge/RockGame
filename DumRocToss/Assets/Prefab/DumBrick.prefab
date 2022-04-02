@@ -186,9 +186,13 @@ MonoBehaviour:
   GroundCheck: {fileID: 4206240672472243607}
   jumpCount: 0
   jumpCountMax: 1
+  speedCap: 6
   MD: {fileID: 11400000, guid: 50a711ed1cd7d1f4d906670ca9810c98, type: 2}
   indicator: {fileID: 4206240673334528795}
   art: {fileID: 4206240673224977275}
+  rColor: 100
+  gColor: 240
+  bColor: 255
 --- !u!114 &4206240672327184698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +224,7 @@ MonoBehaviour:
   damage1: {fileID: 4206240673495150554}
   damage2: {fileID: 4206240672668920916}
   isArmored: 0
+  isFragile: 0
 --- !u!114 &4206240672327184699
 MonoBehaviour:
   m_ObjectHideFlags: 0

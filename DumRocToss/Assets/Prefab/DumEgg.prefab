@@ -778,6 +778,9 @@ MonoBehaviour:
   MD: {fileID: 11400000, guid: 50a711ed1cd7d1f4d906670ca9810c98, type: 2}
   indicator: {fileID: 3519167218434142828}
   art: {fileID: 3519167218255335948}
+  rColor: 200
+  gColor: 230
+  bColor: 255
 --- !u!114 &3519167219572164685
 MonoBehaviour:
   m_ObjectHideFlags: 0

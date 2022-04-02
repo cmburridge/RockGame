@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Color = System.Drawing.Color;
 
 public class Movement : MonoBehaviour
 {
@@ -34,6 +35,8 @@ public class Movement : MonoBehaviour
     
     public GameObject indicator;
     public SpriteRenderer art;
+    public byte rColor;
+    public byte gColor;
 
     private void Start()
     {
@@ -44,7 +47,7 @@ public class Movement : MonoBehaviour
             rb.gravityScale = gravity;
             power = 1;
             jumpCountMax = 4;
-            art.color = Color.cyan;
+            art.color = new Color32(rColor,gColor,255,255);
         }
         else
         {

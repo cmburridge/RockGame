@@ -144,6 +144,9 @@ MonoBehaviour:
   MD: {fileID: 11400000, guid: 50a711ed1cd7d1f4d906670ca9810c98, type: 2}
   indicator: {fileID: 1551523582105896367}
   art: {fileID: 1551523582552057295}
+  rColor: 150
+  gColor: 200
+  bColor: 255
 --- !u!114 &1551523581101047694
 MonoBehaviour:
   m_ObjectHideFlags: 0
