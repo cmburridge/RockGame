@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     public Vector2 reset;
 
     private bool isMoving;
-    private bool isGrounded;
+    public bool isGrounded;
     public GameObject GroundCheck;
     
     private bool isJumping;
