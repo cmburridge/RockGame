@@ -771,6 +771,7 @@ MonoBehaviour:
   minPower: {x: 4, y: 4}
   maxPower: {x: -4, y: -4}
   reset: {x: 0, y: 2}
+  isGrounded: 0
   GroundCheck: {fileID: 3519167219652289760}
   jumpCount: 0
   jumpCountMax: 2
@@ -780,7 +781,6 @@ MonoBehaviour:
   art: {fileID: 3519167218255335948}
   rColor: 200
   gColor: 230
-  bColor: 255
 --- !u!114 &3519167219572164685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,6 +813,8 @@ MonoBehaviour:
   damage2: {fileID: 3519167219846862115}
   isArmored: 0
   isFragile: 1
+  rb: {fileID: 3519167219572164680}
+  gravity: 0.25
 --- !u!114 &3519167219572164684
 MonoBehaviour:
   m_ObjectHideFlags: 0

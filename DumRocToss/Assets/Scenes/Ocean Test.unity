@@ -12072,7 +12072,7 @@ GameObject:
   - component: {fileID: 1960127425}
   - component: {fileID: 1960127424}
   - component: {fileID: 1960127423}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

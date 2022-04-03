@@ -226,6 +226,8 @@ MonoBehaviour:
   damage2: {fileID: 4577041687735122820}
   isArmored: 0
   isFragile: 0
+  rb: {fileID: 4577041687347242735}
+  gravity: 0.25
 --- !u!114 &4577041687347242731
 MonoBehaviour:
   m_ObjectHideFlags: 0

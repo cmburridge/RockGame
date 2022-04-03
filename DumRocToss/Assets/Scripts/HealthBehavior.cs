@@ -12,7 +12,7 @@ public class HealthBehavior : MonoBehaviour
     public GameObject damage1, damage2;
     public bool isArmored = false;
     public bool isFragile = false;
-    
+
     private void Start()
     {
         if (isArmored == true)

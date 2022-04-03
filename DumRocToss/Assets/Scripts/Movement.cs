@@ -36,11 +36,11 @@ public class Movement : MonoBehaviour
     public GameObject indicator;
     public SpriteRenderer art;
     public byte rColor;
-    public byte gColor;
-
-    private void Start()
-    {
-        cam = Camera.main;
+    public byte gColor; 
+ 
+    private void Start() 
+    { 
+        cam = Camera.main; 
 
         if (MD.isOcean == true)
         {
@@ -113,6 +113,8 @@ public class Movement : MonoBehaviour
     {
         if (jumpCount == 0)
         {
+            rb.gravityScale = gravity;
+            rb.freezeRotation = false;
             rb.AddForce(reset, ForceMode2D.Impulse);   
         }
     }

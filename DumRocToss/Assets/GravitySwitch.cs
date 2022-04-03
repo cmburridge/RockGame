@@ -10,7 +10,7 @@ public class GravitySwitch : MonoBehaviour
 
     void Update()
     {
-        if (movement.jumpCount == 0)
+        if (movement.jumpCount > 0)
         {
             rb.gravityScale = reverseGravity;
         }
