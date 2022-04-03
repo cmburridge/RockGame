@@ -180,8 +180,8 @@ MonoBehaviour:
   gravity: 0.25
   rb: {fileID: 4206240672327184703}
   cam: {fileID: 0}
-  minPower: {x: 6, y: 6}
-  maxPower: {x: -6, y: -6}
+  minPower: {x: 5, y: 5}
+  maxPower: {x: -5, y: -5}
   reset: {x: 0, y: 2}
   isGrounded: 0
   GroundCheck: {fileID: 4206240672472243607}
@@ -225,8 +225,6 @@ MonoBehaviour:
   damage2: {fileID: 4206240672668920916}
   isArmored: 0
   isFragile: 0
-  rb: {fileID: 4206240672327184703}
-  gravity: 0.25
 --- !u!114 &4206240672327184699
 MonoBehaviour:
   m_ObjectHideFlags: 0
