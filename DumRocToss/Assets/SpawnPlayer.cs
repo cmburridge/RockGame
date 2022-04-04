@@ -6,7 +6,6 @@ using UnityEngine;
 public class SpawnPlayer : MonoBehaviour
 {
     public GameObject prefab;
-
     public PlayerData player;
     
     private void Start()
