@@ -10,7 +10,7 @@ public class DestroyOnTimer : MonoBehaviour
     public Vector3 location;
     public float time;
 
-    private void Start()
+    private void OnEnable()
     {
         location = spawner.transform.position;
         StartCoroutine(DestroyThis());
@@ -19,7 +19,7 @@ public class DestroyOnTimer : MonoBehaviour
     private IEnumerator DestroyThis()
     {
         yield return new WaitForSeconds(time);
-        Instantiate(prefab, location, Quaternion.identity );
+        Instantiate(prefab, location, Quaternion.identity, spawner.transform);
         Destroy(this.gameObject);
     }
 }
