@@ -36,13 +36,15 @@ public class Movement : MonoBehaviour
     public GameObject indicator;
     public SpriteRenderer art;
     public byte rColor;
-    public byte gColor; 
+    public byte gColor;
+
+    public bool isClam;
  
     private void Start() 
     { 
         cam = Camera.main; 
 
-        if (MD.isOcean == true)
+        if (MD.isOcean == true || isClam == true)
         {
             rb.gravityScale = gravity;
             power = 1;
@@ -52,6 +54,7 @@ public class Movement : MonoBehaviour
         else
         {
             gravity = 1;
+            rb.gravityScale = gravity;
         }
     }
 

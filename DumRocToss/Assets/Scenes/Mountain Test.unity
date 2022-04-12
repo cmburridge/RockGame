@@ -3688,6 +3688,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigSpikeFall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2427121833957564238, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
       propertyPath: m_Material
       value: 
@@ -4744,6 +4756,18 @@ PrefabInstance:
     - target: {fileID: 62812128927508383, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
       propertyPath: m_Name
       value: BigSpikeFall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2427121833957564224, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 2427121833957564238, guid: 6c44b6cfbb0374e44822c242c2a3c6f9, type: 3}
       propertyPath: m_Material
