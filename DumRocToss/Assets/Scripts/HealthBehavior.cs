@@ -12,6 +12,7 @@ public class HealthBehavior : MonoBehaviour
     public GameObject damage1, damage2;
     public bool isArmored = false;
     public bool isFragile = false;
+    public GameObject prefab;
 
     private void Start()
     {
@@ -48,6 +49,7 @@ public class HealthBehavior : MonoBehaviour
 
         if (hpAmount.value <= 0)
         {
+            Instantiate(prefab, this.transform.position, Quaternion.identity);
             healthEvent.Invoke();
         }
     }

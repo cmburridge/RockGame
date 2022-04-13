@@ -39,7 +39,9 @@ public class Movement : MonoBehaviour
     public byte gColor;
 
     public bool isClam;
- 
+
+    public AudioSource audioS;
+
     private void Start() 
     { 
         cam = Camera.main; 
@@ -99,6 +101,7 @@ public class Movement : MonoBehaviour
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
         {
+            audioS.Play();
             rb.gravityScale = gravity;
             rb.freezeRotation = false;
             
