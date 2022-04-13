@@ -1117,7 +1117,7 @@ Transform:
   m_LocalScale: {x: 23.159, y: 23.159, z: 23.159}
   m_Children: []
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &188353323
 MonoBehaviour:
@@ -3961,8 +3961,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546849327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.28, z: 0}
-  m_LocalScale: {x: 72.140434, y: 12.318725, z: 9.368006}
+  m_LocalPosition: {x: 0, y: 8.3099, z: 0}
+  m_LocalScale: {x: 72.140434, y: 9.943236, z: 9.368006}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -5540,7 +5540,7 @@ Transform:
   m_LocalScale: {x: 9.543545, y: 6.605781, z: 10.719319}
   m_Children: []
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &886365646
 PrefabInstance:
@@ -6113,7 +6113,7 @@ Transform:
   - {fileID: 1238253388}
   - {fileID: 2101371276}
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &973932645
 GameObject:
@@ -7065,13 +7065,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 8.2, z: 90}
   m_LocalScale: {x: 0.19158, y: 0.19158, z: 0.19158}
   m_Children:
-  - {fileID: 1447726193}
   - {fileID: 188353322}
   - {fileID: 929607867}
   - {fileID: 1338589451}
   - {fileID: 1344420970}
   - {fileID: 884754586}
   - {fileID: 1143928741}
+  - {fileID: 1447726193}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7714,7 +7714,7 @@ Transform:
   - {fileID: 1433888894}
   - {fileID: 1274603417}
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1143928742
 MonoBehaviour:
@@ -8405,7 +8405,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4074160137382596330, guid: a9c10e8c5c5cd6945acd323cde95412a, type: 3}
+    - {fileID: 7781597605606643332, guid: a9c10e8c5c5cd6945acd323cde95412a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a9c10e8c5c5cd6945acd323cde95412a, type: 3}
 --- !u!1001 &1203253234
 PrefabInstance:
@@ -10207,7 +10209,7 @@ Transform:
   - {fileID: 1533008109}
   - {fileID: 1643876699}
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344420968
 GameObject:
@@ -10290,7 +10292,7 @@ Transform:
   m_LocalScale: {x: 8.125835, y: 8.125835, z: 41.76878}
   m_Children: []
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346679618
 GameObject:
@@ -11520,7 +11522,7 @@ RectTransform:
   - {fileID: 97847913}
   - {fileID: 785783874}
   m_Father: {fileID: 1072245356}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13872,6 +13874,14 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2857586973908675761, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}
+      propertyPath: isClam
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857586973908675761, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}
+      propertyPath: gravity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2857586973908675765, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13926,6 +13936,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857586973908675765, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2857586973908675767, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2857586973908675772, guid: 60ba11efcaaa6aa468ea06af3954647b, type: 3}

@@ -11,7 +11,6 @@ public class Purchasable : ScriptableObject
 
     public bool Unlocked
     {
-
         get => unLocked;
         set => unLocked = true;
     }

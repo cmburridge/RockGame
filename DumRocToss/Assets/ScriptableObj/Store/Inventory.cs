@@ -36,7 +36,6 @@ public class Inventory : ScriptableObject
 
    public void LockCheck()
    {
-      
       foreach (var item in items)
       {
          item.Unlocked = cash.value >= item.value || item.Purchased;
