@@ -14,6 +14,11 @@ public class HealthBehavior : MonoBehaviour
     public bool isFragile = false;
     public GameObject prefab;
 
+    public void Health0()
+    {
+        hpAmount.value = 0;
+    }
+
     private void Start()
     {
         if (isArmored == true)

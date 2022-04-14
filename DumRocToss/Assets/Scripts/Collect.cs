@@ -7,9 +7,18 @@ using UnityEngine.Events;
 public class Collect : MonoBehaviour
 {
     public UnityEvent onCollect;
+    public AudioSource audioS;
+    public float timer;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        audioS.Play();
+        StartCoroutine(AfterEffect());
+    }
+
+    private IEnumerator AfterEffect()
+    {
+        yield return new WaitForSeconds(timer);
         onCollect.Invoke();
     }
 }

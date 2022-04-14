@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using Color = System.Drawing.Color;
+using Random = UnityEngine.Random;
+using UnityEngine.Events;
+
+
 
 public class Movement : MonoBehaviour
 {
@@ -39,6 +42,9 @@ public class Movement : MonoBehaviour
     public byte gColor;
 
     public bool isClam;
+    public bool isBomb;
+    private int randomValue;
+    public UnityEvent jumpEvent;
 
     public AudioSource audioS;
 
@@ -95,8 +101,19 @@ public class Movement : MonoBehaviour
         
         if (jumpCount > 0 && Input.GetMouseButtonDown(0))
         {
-            startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
-            startPoint.z = 15; 
+            if (isBomb == true)
+            {
+                randomValue = Random.Range(1, 100);
+                if (randomValue <= 2)
+                {
+                    jumpEvent.Invoke();
+                }
+            }
+            else
+            {
+                startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
+                startPoint.z = 15; 
+            }
         }
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
