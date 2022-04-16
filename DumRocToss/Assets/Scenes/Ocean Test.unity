@@ -10426,6 +10426,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 379638020109172068, guid: be45445bb2a18b540aa11bcba492732e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 379638020109172068, guid: be45445bb2a18b540aa11bcba492732e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.75823253
+      objectReference: {fileID: 0}
+    - target: {fileID: 379638020109172068, guid: be45445bb2a18b540aa11bcba492732e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6084906
+      objectReference: {fileID: 0}
     - target: {fileID: 3164492941494206287, guid: be45445bb2a18b540aa11bcba492732e, type: 3}
       propertyPath: m_Name
       value: Confetti_0 (1)
