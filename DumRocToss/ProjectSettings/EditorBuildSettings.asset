@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 535ce6201271adf4a950255036e087db
   - enabled: 1
+    path: Assets/Scenes/World1.unity
+    guid: 17739efc03a7b17429b4b3042c3cf9c8
+  - enabled: 1
+    path: Assets/Scenes/World2.unity
+    guid: 9707511708301884eb461829c3b969ba
+  - enabled: 1
+    path: Assets/Scenes/World3.unity
+    guid: 412413db2e908a546ad1d9dd3cf7272f
+  - enabled: 1
+    path: Assets/Scenes/World4.unity
+    guid: 90b5bf4840e6a914caa64e6044d578eb
+  - enabled: 1
+    path: Assets/Scenes/World5.unity
+    guid: 32356a721cc56d34c85b416af717d63f
+  - enabled: 1
     path: Assets/Scenes/WoodlandsTest.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

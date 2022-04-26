@@ -10,7 +10,7 @@ public class LevelSelect : MonoBehaviour
     public UnityEvent mouseEvent;
     public int num;
     
-    private void OnMouseDown()
+    private void OnMouseUp()
     {
         mouseEvent.Invoke();
     }
