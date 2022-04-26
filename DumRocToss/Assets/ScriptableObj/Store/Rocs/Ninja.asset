@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e65dc2bf62c8c84e8190727d0c07e4c, type: 3}
-  m_Name: Player
+  m_Script: {fileID: 11500000, guid: 9957762a9e5d61d44a06d633f5b5c823, type: 3}
+  m_Name: Ninja
   m_EditorClassIdentifier: 
-  costume: {fileID: 317439293777321332, guid: d9d704047ea9b0c408de3d67a6365926, type: 3}
+  value: 30
+  unLocked: 0
+  purchased: 0

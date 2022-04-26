@@ -9,10 +9,12 @@ public class Collect : MonoBehaviour
     public UnityEvent onCollect;
     public AudioSource audioS;
     public float timer;
+    public IntData cash;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         audioS.Play();
+        cash.value += 1;
         StartCoroutine(AfterEffect());
     }
 

@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Roc
+    uniqueID: 1421859731
+    locked: 0
+  - name: Canvas
+    uniqueID: 1640829807
+    locked: 0

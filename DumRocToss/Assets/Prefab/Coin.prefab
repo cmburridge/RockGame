@@ -136,6 +136,7 @@ MonoBehaviour:
         m_CallState: 2
   audioS: {fileID: 3705590324998143922}
   timer: 0.1
+  cash: {fileID: 11400000, guid: 8272fee347bcf478b9e816ce2fca0444, type: 2}
 --- !u!58 &1122960549
 CircleCollider2D:
   m_ObjectHideFlags: 0

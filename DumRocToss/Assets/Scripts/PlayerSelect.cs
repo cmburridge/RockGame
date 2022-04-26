@@ -24,7 +24,7 @@ public class PlayerSelect : MonoBehaviour
     {
         if (player.costume == thisCostume)
         {
-            ren.color = new Color32(145,127,106,255);
+            ren.color = new Color32(137,137,137,255);
             text.SetActive(false);
         }
         else
