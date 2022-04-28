@@ -34,6 +34,7 @@ public class TriggerBehavior : MonoBehaviour
     {
         StartCoroutine(GracePeriod());
     }
+    
 
     private IEnumerator GracePeriod()
     {
