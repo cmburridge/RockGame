@@ -1970,7 +1970,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  num: 0
+  num: 1
 --- !u!212 &141783346
 SpriteRenderer:
   m_ObjectHideFlags: 0

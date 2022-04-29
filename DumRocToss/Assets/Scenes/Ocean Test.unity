@@ -12770,7 +12770,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  num: 0
+  num: 3
 --- !u!61 &759463907
 BoxCollider2D:
   m_ObjectHideFlags: 0

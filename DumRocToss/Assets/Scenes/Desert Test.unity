@@ -31154,7 +31154,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  num: 0
+  num: 2
 --- !u!61 &2089380812
 BoxCollider2D:
   m_ObjectHideFlags: 0

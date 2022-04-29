@@ -30,7 +30,13 @@ EditorBuildSettings:
     path: Assets/Scenes/W1-2.unity
     guid: cfdd6c82120281848bce25ae596627e8
   - enabled: 1
-    path: Assets/Scenes/WoodlandsTest.unity
+    path: Assets/Scenes/W1-3.unity
+    guid: d1b4ad0fc5799ed4a84dc07481f14878
+  - enabled: 1
+    path: Assets/Scenes/W1-4.unity
+    guid: bbe6a3af459634e4980dc5163bdd7088
+  - enabled: 1
+    path: Assets/Scenes/W1-5.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Desert Test.unity
