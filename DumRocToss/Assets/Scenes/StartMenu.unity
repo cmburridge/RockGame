@@ -7719,7 +7719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &490021737
 Transform:
   m_ObjectHideFlags: 0
@@ -10965,7 +10965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &737798806
 Transform:
   m_ObjectHideFlags: 0
@@ -14678,7 +14678,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.4247065, y: 4.8543644}
+  m_Size: {x: 3.7143903, y: 4.0750732}
   m_EdgeRadius: 0
 --- !u!114 &1019014034
 MonoBehaviour:
@@ -15653,7 +15653,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.540351, y: 6.986043}
+  m_Size: {x: 4.0889096, y: 4.367548}
   m_EdgeRadius: 0
 --- !u!114 &1099768678
 MonoBehaviour:
@@ -17953,7 +17953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1213471712
 Transform:
   m_ObjectHideFlags: 0
@@ -18260,7 +18260,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.520643, y: 8.397301}
+  m_Size: {x: 4.070042, y: 4.5444736}
   m_EdgeRadius: 0
 --- !u!114 &1238253390
 MonoBehaviour:
@@ -20804,7 +20804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1347162942
 Transform:
   m_ObjectHideFlags: 0
@@ -21144,7 +21144,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.64562, y: 8.64562}
+  m_Size: {x: 3.7750845, y: 3.7750845}
   m_EdgeRadius: 0
 --- !u!114 &1374751153
 MonoBehaviour:
@@ -31533,7 +31533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2045203728
 Transform:
   m_ObjectHideFlags: 0
