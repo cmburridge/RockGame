@@ -137,6 +137,7 @@ MonoBehaviour:
   audioS: {fileID: 3705590324998143922}
   timer: 0.1
   cash: {fileID: 11400000, guid: 8272fee347bcf478b9e816ce2fca0444, type: 2}
+  coinsCollected: {fileID: 11400000, guid: 4f378a06f4d70bf458d9e7916beb928e, type: 2}
 --- !u!58 &1122960549
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -837,6 +837,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   audioS: {fileID: 4013249106682362363}
+  jumps: {fileID: 11400000, guid: b0534c420dd5d8a42a32463b784ad0cb, type: 2}
+  gamesPlayed: {fileID: 11400000, guid: 0dab23449bf80e34099b45ea3586ec80, type: 2}
 --- !u!114 &4313000849837731987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,6 +872,7 @@ MonoBehaviour:
   isArmored: 0
   isFragile: 0
   prefab: {fileID: 2392177386116157277, guid: b06601301de9173458a8359dc325cffa, type: 3}
+  deathCount: {fileID: 11400000, guid: 62e8a70fcab558e4ca4519b2f8e44474, type: 2}
 --- !u!114 &4313000849837731986
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,12 +7,13 @@ public class TextUpdate : MonoBehaviour
 {
     public Text txt;
     public IntData cash;
+    public int max;
     
     void Update()
     {
-        if (cash.value > 999)
+        if (cash.value > max)
         {
-            cash.value = 999;
+            cash.value = max;
         }
         txt.text = cash.value.ToString();
     }

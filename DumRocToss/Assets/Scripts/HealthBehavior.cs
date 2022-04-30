@@ -13,6 +13,7 @@ public class HealthBehavior : MonoBehaviour
     public bool isArmored = false;
     public bool isFragile = false;
     public GameObject prefab;
+    public IntData deathCount;
 
     public void Health0()
     {
@@ -54,6 +55,7 @@ public class HealthBehavior : MonoBehaviour
 
         if (hpAmount.value <= 0)
         {
+            deathCount.value += 1;
             Instantiate(prefab, this.transform.position, Quaternion.identity);
             healthEvent.Invoke();
         }

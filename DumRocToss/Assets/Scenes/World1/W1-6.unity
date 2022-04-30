@@ -3431,6 +3431,7 @@ GameObject:
   - component: {fileID: 170738914}
   - component: {fileID: 170738913}
   - component: {fileID: 170738912}
+  - component: {fileID: 170738916}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3569,6 +3570,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170738916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170738910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcd15dddb2efca4fa3ac63c716f9417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound: {fileID: 11400000, guid: 8b983da922d1a3b4681c484259153332, type: 2}
 --- !u!1 &175584989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,8 +7497,8 @@ Transform:
   - {fileID: 242784344}
   - {fileID: 1183448021}
   - {fileID: 848482796}
-  - {fileID: 122787345}
   - {fileID: 2081733094}
+  - {fileID: 122787345}
   - {fileID: 966356384}
   - {fileID: 832324534}
   - {fileID: 546959568}
@@ -33722,7 +33736,7 @@ Transform:
   m_LocalScale: {x: 1.8520595, y: 1.8520595, z: 1.8520594}
   m_Children: []
   m_Father: {fileID: 378742213}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 6.696}
 --- !u!60 &2081733095
 PolygonCollider2D:

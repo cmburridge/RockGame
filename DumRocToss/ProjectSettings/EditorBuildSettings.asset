@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/World2/World2.unity
     guid: 9707511708301884eb461829c3b969ba
   - enabled: 1
-    path: Assets/Scenes/World3.unity
+    path: Assets/Scenes/World3/World3.unity
     guid: 412413db2e908a546ad1d9dd3cf7272f
   - enabled: 1
     path: Assets/Scenes/World4.unity
@@ -60,19 +60,28 @@ EditorBuildSettings:
     path: Assets/Scenes/World2/W2-6.unity
     guid: 2a00af470ea00854685f7a621ad95640
   - enabled: 1
-    path: Assets/Scenes/W3-1.unity
+    path: Assets/Scenes/World3/W3-1.unity
     guid: 757e386f5c922424cba9a5a2983d0959
   - enabled: 1
-    path: Assets/Scenes/W3-2.unity
+    path: Assets/Scenes/World3/W3-2.unity
     guid: 8cf7081dfb30b0642b28c7ed93954a56
   - enabled: 1
-    path: Assets/Scenes/W3-3.unity
+    path: Assets/Scenes/World3/W3-3.unity
     guid: 5db11a7b1be65234dad1a7692ce85eb0
   - enabled: 1
-    path: Assets/Scenes/W3-4.unity
+    path: Assets/Scenes/World3/W3-4.unity
     guid: 116848ff22160f840a5376d163b0b883
   - enabled: 1
-    path: Assets/Scenes/Mountain Test.unity
+    path: Assets/Scenes/World3/W3-5.unity
+    guid: ffbcdca73149b954eadda0f2338a25b4
+  - enabled: 1
+    path: Assets/Scenes/World3/W3-6.unity
+    guid: 311ad8faa0030bf4c85b2f44e96afbcd
+  - enabled: 1
+    path: Assets/Scenes/W4-1.unity
+    guid: 81d3b105fcc97d44891c26376cff5cea
+  - enabled: 1
+    path: Assets/Scenes/W4-2.unity
     guid: e76b25ea2bf28d147b2ef42a96e811c3
   - enabled: 1
     path: Assets/Scenes/Glacial Test 1.unity

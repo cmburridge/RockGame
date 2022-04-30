@@ -355,7 +355,13 @@ MonoBehaviour:
   rColor: 100
   gColor: 240
   isClam: 0
+  isBomb: 0
+  jumpEvent:
+    m_PersistentCalls:
+      m_Calls: []
   audioS: {fileID: -8581608822604451386}
+  jumps: {fileID: 11400000, guid: b0534c420dd5d8a42a32463b784ad0cb, type: 2}
+  gamesPlayed: {fileID: 11400000, guid: 0dab23449bf80e34099b45ea3586ec80, type: 2}
 --- !u!114 &8455327504627830409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +395,7 @@ MonoBehaviour:
   isArmored: 0
   isFragile: 0
   prefab: {fileID: 5667891679608937669, guid: 386cd9a766c087d4bbbd5a9ae2fa4eb8, type: 3}
+  deathCount: {fileID: 11400000, guid: 62e8a70fcab558e4ca4519b2f8e44474, type: 2}
 --- !u!114 &8455327504627830408
 MonoBehaviour:
   m_ObjectHideFlags: 0

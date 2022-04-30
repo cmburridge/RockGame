@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Events;
@@ -48,8 +49,13 @@ public class Movement : MonoBehaviour
 
     public AudioSource audioS;
 
-    private void Start() 
-    { 
+    public IntData jumps;
+    public int playedValue = 1;
+    public IntData gamesPlayed;
+
+    private void Start()
+    {
+        gamesPlayed.value += playedValue;
         cam = Camera.main; 
 
         if (MD.isOcean == true || isClam == true)
@@ -118,6 +124,7 @@ public class Movement : MonoBehaviour
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
         {
+            jumps.value += 1;
             audioS.Play();
             rb.gravityScale = gravity;
             rb.freezeRotation = false;
