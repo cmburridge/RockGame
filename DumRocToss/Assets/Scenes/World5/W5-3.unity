@@ -4892,6 +4892,18 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 390971063}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
@@ -6584,7 +6596,19 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 509322047}
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 390971063}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
         m_Mode: 1
@@ -11404,7 +11428,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -12556,7 +12580,19 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 945555644}
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 390971063}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
         m_Mode: 1
@@ -20487,7 +20523,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -23655,7 +23691,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -29550,7 +29586,19 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2005912967}
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 390971063}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
         m_Mode: 1

@@ -1958,6 +1958,18 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 141783345}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
@@ -9553,6 +9565,18 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 674002314}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
@@ -13648,6 +13672,18 @@ MonoBehaviour:
   mouseEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 8eac7421c744d264aa30748f9eb0f9a7, type: 2}
+        m_TargetAssemblyTypeName: DataStorage, Assembly-CSharp
+        m_MethodName: SetListData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 945488178}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: ChangeLevel
@@ -16917,7 +16953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cbab764652c1545bdcc46fb67bcdb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lD: {fileID: 11400000, guid: 3c8c61b1dc88cf145a85f5d576eb6886, type: 2}
+  lD: {fileID: 0}
   isFinished:
     m_PersistentCalls:
       m_Calls:
@@ -18551,6 +18587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   txt: {fileID: 0}
   cash: {fileID: 11400000, guid: 8272fee347bcf478b9e816ce2fca0444, type: 2}
+  max: 0
 --- !u!1 &1371031382
 GameObject:
   m_ObjectHideFlags: 0
@@ -24372,7 +24409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cbab764652c1545bdcc46fb67bcdb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lD: {fileID: 11400000, guid: 2be5c0ecaa2dc4c4ea3bcab2b2d7fa31, type: 2}
+  lD: {fileID: 0}
   isFinished:
     m_PersistentCalls:
       m_Calls:
@@ -24552,7 +24589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0cbab764652c1545bdcc46fb67bcdb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lD: {fileID: 11400000, guid: a95cad30f77f42842b3609611c799132, type: 2}
+  lD: {fileID: 0}
   isFinished:
     m_PersistentCalls:
       m_Calls:
