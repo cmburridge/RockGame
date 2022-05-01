@@ -18,10 +18,10 @@ EditorBuildSettings:
     path: Assets/Scenes/World3/World3.unity
     guid: 412413db2e908a546ad1d9dd3cf7272f
   - enabled: 1
-    path: Assets/Scenes/World4.unity
+    path: Assets/Scenes/World4/World4.unity
     guid: 90b5bf4840e6a914caa64e6044d578eb
   - enabled: 1
-    path: Assets/Scenes/World5.unity
+    path: Assets/Scenes/World5/World5.unity
     guid: 32356a721cc56d34c85b416af717d63f
   - enabled: 1
     path: Assets/Scenes/World1/W1-1.unity
@@ -78,12 +78,27 @@ EditorBuildSettings:
     path: Assets/Scenes/World3/W3-6.unity
     guid: 311ad8faa0030bf4c85b2f44e96afbcd
   - enabled: 1
-    path: Assets/Scenes/W4-1.unity
+    path: Assets/Scenes/World4/W4-1.unity
     guid: 81d3b105fcc97d44891c26376cff5cea
   - enabled: 1
-    path: Assets/Scenes/W4-2.unity
+    path: Assets/Scenes/World4/W4-2.unity
     guid: e76b25ea2bf28d147b2ef42a96e811c3
   - enabled: 1
-    path: Assets/Scenes/Glacial Test 1.unity
+    path: Assets/Scenes/World4/W4-3.unity
+    guid: bde864ed8f791f743abe4fddfc6c5be3
+  - enabled: 1
+    path: Assets/Scenes/World4/W4-4.unity
+    guid: 6e86c297147bacc42916cd3d5aa2a888
+  - enabled: 1
+    path: Assets/Scenes/World5/W5-1.unity
     guid: 4e10bca1d8033984ba29802f39ebc3a5
+  - enabled: 1
+    path: Assets/Scenes/World5/W5-2.unity
+    guid: 97e5d7a1268b2ab438c2d128819e4c48
+  - enabled: 1
+    path: Assets/Scenes/World5/W5-3.unity
+    guid: 254a7cb0005f9844d8961b048df33a62
+  - enabled: 1
+    path: Assets/Scenes/World5/W5-4.unity
+    guid: 9e6a33f56f01d7145b23473279ac3cb6
   m_configObjects: {}
