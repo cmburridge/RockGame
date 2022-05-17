@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b4c8ba73297954bafb3f89837fcc2c, type: 3}
   m_Name: FakeJumps 1
   m_EditorClassIdentifier: 
-  value: 15
+  value: 0
