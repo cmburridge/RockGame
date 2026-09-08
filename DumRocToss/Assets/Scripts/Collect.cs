@@ -14,7 +14,7 @@ public class Collect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        audioS.Play();
+        Instantiate(audioS);
         cash.value += 1;
         coinsCollected.value += 1;
         StartCoroutine(AfterEffect());

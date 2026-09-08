@@ -183,6 +183,8 @@ GameObject:
   - component: {fileID: 2057456774598937893}
   - component: {fileID: 3977330270709251877}
   - component: {fileID: 3822620066988645283}
+  - component: {fileID: 7885462315032161423}
+  - component: {fileID: 491585367762439982}
   m_Layer: 9
   m_Name: DumStar
   m_TagString: Untagged
@@ -260,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f21d7012d4cd54eaea9ef37b046e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 2
+  power: 15
   speed: 0
   gravity: 0.25
   rb: {fileID: 7867318875172584800}
@@ -273,6 +275,8 @@ MonoBehaviour:
   jumpCount: 0
   jumpCountMax: 1
   speedCap: 6
+  maxSwipeDistance: 15
+  swipeSensitivity: 6
   MD: {fileID: 11400000, guid: 50a711ed1cd7d1f4d906670ca9810c98, type: 2}
   indicator: {fileID: 7867318876178483012}
   art: {fileID: 2015038729243462258}
@@ -302,6 +306,18 @@ MonoBehaviour:
   healthEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 7885462315032161423}
+        m_TargetAssemblyTypeName: SpawnEffects, Assembly-CSharp
+        m_MethodName: SpawnEffectHere
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7867318875172584804}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
         m_MethodName: DestroyThis
@@ -318,7 +334,7 @@ MonoBehaviour:
   damage1: {fileID: 7867318876353454981}
   damage2: {fileID: 7867318876063965195}
   isArmored: 0
-  isFragile: 0
+  isFragile: 1
   prefab: {fileID: 6108246400341611512, guid: 1cb350b6a797b2b4d970e45cfc27bb36, type: 3}
   deathCount: {fileID: 11400000, guid: 62e8a70fcab558e4ca4519b2f8e44474, type: 2}
 --- !u!114 &7867318875172584804
@@ -488,6 +504,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastLevel: {fileID: 11400000, guid: e0f4b0261b9eb7743b24f191e35eecd6, type: 2}
   crown: {fileID: 4660604759392295322}
+--- !u!114 &7885462315032161423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867318875172584811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d6cc77e9366bc458038db07aaf00e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &491585367762439982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867318875172584811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40abdacc0e139eb4baedcdff75da10ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaces:
+  - surfaceName: Ground
+    surfaceLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    mediumImpactSounds:
+    - {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    heavyImpactSound: {fileID: 8300000, guid: 13eb2d16e513986418c3e6e1a5ac05d3, type: 3}
+    rollingSound: {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    mediumImpactParticles: {fileID: 0}
+    heavyImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  - surfaceName: Damage
+    surfaceLayer:
+      serializedVersion: 2
+      m_Bits: 9216
+    mediumImpactSounds:
+    - {fileID: 8300000, guid: 13eb2d16e513986418c3e6e1a5ac05d3, type: 3}
+    - {fileID: 8300000, guid: a3886f811bd5f32479f232b22425d4c6, type: 3}
+    heavyImpactSound: {fileID: 8300000, guid: 52bb076c680ae324982c1c23e03cba33, type: 3}
+    rollingSound: {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    mediumImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+    heavyImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  mediumImpactThreshold: 7
+  heavyImpactThreshold: 10
+  impactCooldown: 1
+  rollingVelocityThreshold: 2
+  rollingVolume: 0.15
+  pitchVariation: 0.08
+  volumeVariation: 0.1
+  virtualCamera: {fileID: 0}
+  zoomAmount: 0.5
+  zoomReturnSpeed: 3
+  hitStopDuration: 0.03
+  is3D: 0
 --- !u!1 &7867318875459893127
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +713,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867318876063965195}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -920,7 +994,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867318876353454981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

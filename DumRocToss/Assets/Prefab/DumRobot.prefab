@@ -101,6 +101,11 @@ GameObject:
   - component: {fileID: 4119215897512256342}
   - component: {fileID: 4328081723245929834}
   - component: {fileID: 2855160711526166134}
+  - component: {fileID: 3106903730969489511}
+  - component: {fileID: 4332904089623759987}
+  - component: {fileID: 9033017154156596378}
+  - component: {fileID: -944695562048082354}
+  - component: {fileID: -530872168226710676}
   m_Layer: 9
   m_Name: DumRobot
   m_TagString: Untagged
@@ -179,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f21d7012d4cd54eaea9ef37b046e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  power: 2
+  power: 8
   speed: 0
   gravity: 0.25
   rb: {fileID: 4577041687347242735}
@@ -192,6 +197,8 @@ MonoBehaviour:
   jumpCount: 0
   jumpCountMax: 1
   speedCap: 6
+  maxSwipeDistance: 15
+  swipeSensitivity: 6
   MD: {fileID: 11400000, guid: 50a711ed1cd7d1f4d906670ca9810c98, type: 2}
   indicator: {fileID: 4577041688350399691}
   art: {fileID: 4577041688261819563}
@@ -221,6 +228,18 @@ MonoBehaviour:
   healthEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 3106903730969489511}
+        m_TargetAssemblyTypeName: SpawnEffects, Assembly-CSharp
+        m_MethodName: SpawnEffectHere
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 4577041687347242731}
         m_TargetAssemblyTypeName: Destroy, Assembly-CSharp
         m_MethodName: DestroyThis
@@ -403,6 +422,100 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastLevel: {fileID: 11400000, guid: e0f4b0261b9eb7743b24f191e35eecd6, type: 2}
   crown: {fileID: 5166230074745898365}
+--- !u!114 &3106903730969489511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577041687347242724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d6cc77e9366bc458038db07aaf00e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4332904089623759987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577041687347242724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40abdacc0e139eb4baedcdff75da10ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaces:
+  - surfaceName: Ground
+    surfaceLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    mediumImpactSounds:
+    - {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    heavyImpactSound: {fileID: 8300000, guid: 13eb2d16e513986418c3e6e1a5ac05d3, type: 3}
+    rollingSound: {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    mediumImpactParticles: {fileID: 0}
+    heavyImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  - surfaceName: Damage
+    surfaceLayer:
+      serializedVersion: 2
+      m_Bits: 9216
+    mediumImpactSounds:
+    - {fileID: 8300000, guid: 13eb2d16e513986418c3e6e1a5ac05d3, type: 3}
+    - {fileID: 8300000, guid: a3886f811bd5f32479f232b22425d4c6, type: 3}
+    heavyImpactSound: {fileID: 8300000, guid: 52bb076c680ae324982c1c23e03cba33, type: 3}
+    rollingSound: {fileID: 8300000, guid: b75cf0fece3c9d748aeb948be8cb4c39, type: 3}
+    mediumImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+    heavyImpactParticles: {fileID: 5880797563127281583, guid: 265d3a5ba69981a4698ceabcedf368b0, type: 3}
+  mediumImpactThreshold: 7
+  heavyImpactThreshold: 10
+  impactCooldown: 1
+  rollingVelocityThreshold: 2
+  rollingVolume: 0.15
+  pitchVariation: 0.08
+  volumeVariation: 0.1
+  virtualCamera: {fileID: 0}
+  zoomAmount: 0.5
+  zoomReturnSpeed: 3
+  hitStopDuration: 0.03
+  is3D: 0
+--- !u!170 &9033017154156596378
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577041687347242724}
+  m_Enabled: 1
+  m_DistortionLevel: 0.35
+--- !u!166 &-944695562048082354
+AudioChorusFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577041687347242724}
+  m_Enabled: 1
+  m_DryMix: 1
+  m_WetMix1: 0.63
+  m_WetMix2: 0.83
+  m_WetMix3: 0.05
+  m_Delay: 40.42
+  m_Rate: 1.07
+  m_Depth: 1
+--- !u!168 &-530872168226710676
+AudioEchoFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4577041687347242724}
+  m_Enabled: 1
+  m_Delay: 500
+  m_DecayRatio: 0.71
+  m_WetMix: 1
+  m_DryMix: 1
 --- !u!1 &4577041687525853767
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,8 @@ public class DataStorage : ScriptableObject
         {
             SetData(obj);
         }
+
+        SaveNow();
     }
 
     public void GetListData()
@@ -22,30 +24,51 @@ public class DataStorage : ScriptableObject
             GetData(obj);
         }
     }
-    
+
     public void SetData(ScriptableObject obj)
     {
         if (obj == null) return;
-        PlayerPrefs.SetString(obj.name, JsonUtility.ToJson(obj));
+
+        string json = JsonUtility.ToJson(obj);
+        PlayerPrefs.SetString(obj.name, json);
     }
 
     public void SetData()
     {
         if (data == null) return;
-        PlayerPrefs.SetString(data.name, JsonUtility.ToJson(data));
+
+        string json = JsonUtility.ToJson(data);
+        PlayerPrefs.SetString(data.name, json);
+
+        SaveNow();
     }
-    
+
     public void GetData(ScriptableObject obj)
     {
         if (obj == null) return;
-        if (!string.IsNullOrEmpty(PlayerPrefs.GetString(obj.name)))
-            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(obj.name), obj);
+
+        if (PlayerPrefs.HasKey(obj.name))
+        {
+            string json = PlayerPrefs.GetString(obj.name);
+            JsonUtility.FromJsonOverwrite(json, obj);
+        }
     }
 
     public void GetData()
     {
         if (data == null) return;
-        if (!string.IsNullOrEmpty(PlayerPrefs.GetString(data.name)))
-            JsonUtility.FromJsonOverwrite(PlayerPrefs.GetString(data.name), data);
+
+        if (PlayerPrefs.HasKey(data.name))
+        {
+            string json = PlayerPrefs.GetString(data.name);
+            JsonUtility.FromJsonOverwrite(json, data);
+        }
+    }
+
+    private void SaveNow()
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        PlayerPrefs.Save();
+#endif
     }
 }

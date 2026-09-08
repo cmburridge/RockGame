@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e65dc2bf62c8c84e8190727d0c07e4c, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  costume: {fileID: 4313000849837731997, guid: 45911880b80ee3646a3600727f4d373c, type: 3}
+  costume: {fileID: 317439293777321332, guid: d9d704047ea9b0c408de3d67a6365926, type: 3}

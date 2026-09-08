@@ -1,27 +1,53 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class OnMouseEvent : MonoBehaviour
 {
     public bool switchOn = false;
     public Rigidbody2D rb;
-    public float reverseGravity;
+    public float reverseGravity = -1f;
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.Save();
+    }
 
     private void Update()
     {
-        if (Input.touchCount > 0)
+        // 1. Check for Touch or Mouse Click
+        bool isInputDetected = Input.touchCount > 0 || Input.GetMouseButton(0);
+
+        if (isInputDetected)
         {
-            switchOn = true;
+            // 2. Get the position of the touch/click
+            Vector3 pos = Input.touchCount > 0 ? (Vector3)Input.GetTouch(0).position : Input.mousePosition;
+            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(pos);
+
+            // 3. Find ALL colliders at that point
+            RaycastHit2D[] hits = Physics2D.RaycastAll(worldPoint, Vector2.zero);
+
+            bool hitTarget = false;
+            foreach (RaycastHit2D hit in hits)
+            {
+                // SKIP Polygon Colliders
+                if (hit.collider is PolygonCollider2D) continue;
+
+                // CHECK if we hit this object
+                if (hit.collider.gameObject == gameObject)
+                {
+                    hitTarget = true;
+                    break;
+                }
+            }
+
+            switchOn = hitTarget;
         }
-        else if (Input.touchCount <= 0)
+        else
         {
             switchOn = false;
         }
-        
-        if (switchOn == true)
+
+        // 4. Apply Gravity Logic
+        if (switchOn)
         {
             rb.gravityScale = reverseGravity;
         }

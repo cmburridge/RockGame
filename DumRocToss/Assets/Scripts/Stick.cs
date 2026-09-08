@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Stick : MonoBehaviour
 {
+    public AudioSource slimeAudio;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         other.attachedRigidbody.gravityScale = 0;
         other.attachedRigidbody.velocity = Vector2.zero;
         other.attachedRigidbody.freezeRotation = true;
+        slimeAudio.Play();
     }
 }

@@ -6,36 +6,36 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 using UnityEngine.Events;
 
-
-
 public class Movement : MonoBehaviour
 {
     public float power;
     public float speed;
     public float gravity = 1;
-    
+
     public Rigidbody2D rb;
     public Camera cam;
-    
+
     public Vector2 minPower;
     public Vector2 maxPower;
-    
+
     private Vector2 force;
     public Vector2 reset;
 
     private bool isMoving;
     public bool isGrounded;
     public GameObject GroundCheck;
-    
+
     private bool isJumping;
     public float jumpCount;
     public float jumpCountMax;
     public float speedCap = 6;
+    public float maxSwipeDistance = 15;
+    public float swipeSensitivity = 2f; //  Mobile fix
     public MapData MD;
-    
+
     private Vector3 startPoint;
     private Vector3 endPoint;
-    
+
     public GameObject indicator;
     public SpriteRenderer art;
     public byte rColor;
@@ -55,14 +55,21 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         gamesPlayed.value += playedValue;
-        cam = Camera.main; 
+        cam = Camera.main;
+
+        if (Application.isMobilePlatform)
+            swipeSensitivity = 2.5f; // optional auto adjust
 
         if (MD.isOcean == true || isClam == true)
         {
             rb.gravityScale = gravity;
-            power = 1;
-            jumpCountMax = 4;
-            art.color = new Color32(rColor,gColor,255,255);
+            power = power - 7;
+            if (power <= 3)
+            {
+                power = 3;
+            }
+            jumpCountMax += 2;
+            art.color = new Color32(rColor, gColor, 255, 255);
         }
         else
         {
@@ -77,7 +84,7 @@ public class Movement : MonoBehaviour
         {
             jumpCount = 1;
         }
-        
+
         speed = rb.velocity.magnitude;
         if (speed < speedCap && jumpCount > 0)
         {
@@ -89,7 +96,7 @@ public class Movement : MonoBehaviour
             isMoving = true;
             indicator.SetActive(false);
         }
-        
+
         if (GroundCheck.gameObject.activeInHierarchy && speed < speedCap)
         {
             isGrounded = true;
@@ -98,12 +105,12 @@ public class Movement : MonoBehaviour
         {
             isGrounded = false;
         }
-        
+
         if (isGrounded == true && jumpCount == 0)
         {
             jumpCount = jumpCountMax;
         }
-        
+
         if (jumpCount > 0 && Input.GetMouseButtonDown(0))
         {
             if (isBomb == true)
@@ -117,7 +124,7 @@ public class Movement : MonoBehaviour
             else
             {
                 startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
-                startPoint.z = 15; 
+                startPoint.z = 15;
             }
         }
 
@@ -127,13 +134,22 @@ public class Movement : MonoBehaviour
             audioS.Play();
             rb.gravityScale = gravity;
             rb.freezeRotation = false;
-            
+
             endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
             endPoint.z = 15;
-            
-            force = new Vector2(Mathf.Clamp(startPoint.x - endPoint.x, minPower.x, maxPower.x), Mathf.Clamp(startPoint.y - endPoint.y, minPower.y, maxPower.y));
-            rb.AddForce(force * power, ForceMode2D.Impulse);
-            
+
+            Vector2 swipeDirection = endPoint - startPoint;
+            swipeDirection.Normalize();
+
+            //  Only modification for mobile scaling
+            float swipeDistance = Vector2.Distance(startPoint, endPoint) * swipeSensitivity;
+
+            float normalizedPower = Mathf.Clamp01(swipeDistance / maxSwipeDistance);
+            float calculatedPower = normalizedPower * power;
+
+            force = new Vector2(swipeDirection.x * calculatedPower, swipeDirection.y * calculatedPower);
+            rb.AddForce(force, ForceMode2D.Impulse);
+
             jumpCount -= 1;
         }
     }
@@ -144,7 +160,7 @@ public class Movement : MonoBehaviour
         {
             rb.gravityScale = gravity;
             rb.freezeRotation = false;
-            rb.AddForce(reset, ForceMode2D.Impulse);   
+            rb.AddForce(reset, ForceMode2D.Impulse);
         }
     }
 }

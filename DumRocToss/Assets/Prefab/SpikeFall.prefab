@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 62812128927508369}
   - component: {fileID: 62812128927508368}
   - component: {fileID: 62812128927508372}
+  - component: {fileID: -1047442926792052573}
   m_Layer: 10
   m_Name: SpikeFall
   m_TagString: Untagged
@@ -140,6 +141,41 @@ MonoBehaviour:
   spawner: {fileID: 0}
   location: {x: 0, y: 0, z: 0}
   time: 27
+--- !u!114 &-1047442926792052573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62812128927508383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40abdacc0e139eb4baedcdff75da10ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  surfaces:
+  - surfaceName: Ground
+    surfaceLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    mediumImpactSounds:
+    - {fileID: 8300000, guid: eac0dde1d38d6364cbf33d91dd0ab0a7, type: 3}
+    heavyImpactSound: {fileID: 8300000, guid: 13eb2d16e513986418c3e6e1a5ac05d3, type: 3}
+    rollingSound: {fileID: 8300000, guid: ffbad1183c74d424aa0fca58c3d35f36, type: 3}
+    mediumImpactParticles: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+    heavyImpactParticles: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  mediumImpactThreshold: 7
+  heavyImpactThreshold: 10
+  impactCooldown: 1
+  rollingVelocityThreshold: 2
+  rollingVolume: 0.15
+  pitchVariation: 0.08
+  volumeVariation: 0.1
+  virtualCamera: {fileID: 0}
+  zoomAmount: 0
+  zoomReturnSpeed: 0
+  hitStopDuration: 0
+  is3D: 1
 --- !u!1 &2427121833957564225
 GameObject:
   m_ObjectHideFlags: 0
