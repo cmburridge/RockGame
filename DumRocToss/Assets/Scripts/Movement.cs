@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
-using Random = UnityEngine.Random;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 public class Movement : MonoBehaviour
 {
@@ -126,6 +128,28 @@ public class Movement : MonoBehaviour
                 startPoint = cam.ScreenToWorldPoint(Input.mousePosition);
                 startPoint.z = 15;
             }
+        }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            // 1. Get the mouse position in pixel coordinates and set Z to the camera distance
+            Vector3 mouseScreenPos = Input.mousePosition;
+            mouseScreenPos.z = Mathf.Abs(Camera.main.transform.position.z);
+
+            // 2. Convert the screen pixels into actual 2D World coordinates
+            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+
+            // 3. Calculate direction: Target (Mouse) minus Origin (Object)
+            Vector2 direction = (Vector2)mouseWorldPos - (Vector2)transform.position;
+
+            // 4. Normalize the vector so its length is 1 (prevents pushing harder if the mouse is far away)
+            direction.Normalize();
+
+            // 5. Multiply the direction by your desired force strength
+            Vector2 force = direction * power / 2;
+
+            // 6. Apply the impulse force
+            rb.AddForce(-force, ForceMode2D.Impulse);
         }
 
         if (jumpCount > 0 && Input.GetMouseButtonUp(0) && isMoving == false)
