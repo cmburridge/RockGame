@@ -144,7 +144,7 @@ TextureImporter:
       213: 8511163245915983824
     second: Dessert_46
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -161,10 +161,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -203,6 +205,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -214,6 +218,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -226,6 +231,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -238,6 +244,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -250,6 +257,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1252,9 +1273,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Dessert_0: -1061313567761378629
+      Dessert_1: 3908961915645751514
+      Dessert_10: -5227652279603817901
+      Dessert_11: 5429833440699119139
+      Dessert_12: -194461412954490489
+      Dessert_13: -5626051248849794019
+      Dessert_14: -1649712406958191437
+      Dessert_15: 9198992529175803306
+      Dessert_16: 4252248491648358727
+      Dessert_17: 3795232694461422391
+      Dessert_18: -5856214022330384854
+      Dessert_19: 6580591325521835701
+      Dessert_2: -1664811932932755814
+      Dessert_20: -1834753586333680271
+      Dessert_21: 3043188867856367156
+      Dessert_22: -7689294686012470686
+      Dessert_23: -5631104745924877533
+      Dessert_24: 5373182324314579232
+      Dessert_25: -3762343730708345163
+      Dessert_26: 5831130683417733496
+      Dessert_27: -2181293235167049652
+      Dessert_28: 7499282335847539887
+      Dessert_29: 4495819474576541465
+      Dessert_3: 6652349303655517873
+      Dessert_30: -222282546054830285
+      Dessert_31: -3916711703903222470
+      Dessert_32: 1056689795227050352
+      Dessert_33: 6728667608158452794
+      Dessert_34: -8835298149716240464
+      Dessert_35: 5450755797987492160
+      Dessert_36: 2964348429691026178
+      Dessert_37: 5534292279723199797
+      Dessert_38: 2564674855772528231
+      Dessert_39: 161384590072755167
+      Dessert_4: -7822541327312786537
+      Dessert_40: -5224464909968805343
+      Dessert_41: -8187040387346038518
+      Dessert_42: -4622540678780833819
+      Dessert_43: 2793461098540988169
+      Dessert_44: -8818467200582559674
+      Dessert_45: -2511364064862963652
+      Dessert_46: 8511163245915983824
+      Dessert_5: 7315091755669568879
+      Dessert_6: -8676433094588411947
+      Dessert_7: 6357673999279705537
+      Dessert_8: -8723552023285873892
+      Dessert_9: -3100680178427718970
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
